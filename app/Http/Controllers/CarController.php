@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\CarModel;
+use App\Car;
 
 class CarController extends Controller
 {
         public function index()
     {
-        $cars = CarModel::all();
+        $cars = Car::all();
         dd($cars);
         return view('cars');
     }
